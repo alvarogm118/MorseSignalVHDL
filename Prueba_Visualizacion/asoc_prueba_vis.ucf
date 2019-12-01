@@ -1,0 +1,17 @@
+# Reloj principal del sistema
+NET "CLK" LOC = "M6"; # Señal de reloj del sistema de XTAL
+
+# Conexiones de los DISPLAYS
+NET "SEG7<0>" LOC = "L14"; # señal = CA
+NET "SEG7<1>" LOC = "H12"; # Señal = CB
+NET "SEG7<2>" LOC = "N14"; # Señal = CC
+NET "SEG7<3>" LOC = "N11"; # Señal = CD
+NET "SEG7<4>" LOC = "P12"; # Señal = CE
+NET "SEG7<5>" LOC = "L13"; # Señal = CF
+NET "SEG7<6>" LOC = "M12"; # Señal = CG
+
+# Señales de activación de los displays
+NET "AN<0>" LOC = "K14"; # Activación del display 0 = AN0
+NET "AN<1>" LOC = "M13"; # Activación del display 1 = AN1
+NET "AN<2>" LOC = "J12"; # Activación del display 2 = AN2
+NET "AN<3>" LOC = "F12"; # Activación del display 3 = AN3

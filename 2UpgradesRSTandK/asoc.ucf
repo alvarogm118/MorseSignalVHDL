@@ -1,0 +1,39 @@
+# ----------------------------------------------------------------------
+# Fichero de asociaciones del generador de señal
+# ----------------------------------------------------------------------
+
+
+# Reloj principal del sistema
+NET "CLK" LOC = "M6"; # Señal de reloj del sistema
+
+# Conexiones de los DISPLAYS
+NET "SEG7<0>" LOC = "L14"; # señal = CA
+NET "SEG7<1>" LOC = "H12"; # Señal = CB
+NET "SEG7<2>" LOC = "N14"; # Señal = CC
+NET "SEG7<3>" LOC = "N11"; # Señal = CD
+NET "SEG7<4>" LOC = "P12"; # Señal = CE
+NET "SEG7<5>" LOC = "L13"; # Señal = CF
+NET "SEG7<6>" LOC = "M12"; # Señal = CG
+
+# Señales de activación de los displays
+NET "AN<0>" LOC = "K14"; # Activación del display 0 = AN0
+NET "AN<1>" LOC = "M13"; # Activación del display 1 = AN1
+NET "AN<2>" LOC = "J12"; # Activación del display 2 = AN2
+NET "AN<3>" LOC = "F12"; # Activación del display 3 = AN3
+
+#Entrada externa donde se conecta la señal entrante
+NET "LIN" LOC = "B2"; # Entrada de datos (Es el terminal 1 de entradas)
+
+#Salidas para generar la señal analógica (no tocar estas líneas)
+NET "SPI_CLK" LOC = "A9"; # Salida externa terminal 14
+NET "SPI_DIN" LOC = "B9"; # Salida externa terminal 15
+NET "SPI_CS1" LOC = "C9"; # Salida externa terminal 17
+
+#Entradas para arrancar y parar la señal analógica (no tocar estas líneas)
+NET "BTN_START" LOC = "G12"; # Entrada externa BTN0
+NET "BTN_STOP" LOC = "C11"; # Entrada externa BTN1
+NET "RST" LOC = "M4"; # Entrada externa BTN2(RST)
+NET "BTN_K" LOC = "A7"; # Entrada externa BTN3
+
+#LED deteccion K
+NET "LED_K" LOC = "M5"; # LED0
